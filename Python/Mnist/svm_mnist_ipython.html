@@ -1,0 +1,632 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="qrichtext" content="1" /><style type="text/css">
+p, li { white-space: pre-wrap; }
+</style></head><body style=" font-family:'Consolas'; font-size:10pt; font-weight:400; font-style:normal;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Python 2.7.13 |Anaconda 4.3.0 (64-bit)| (default, Dec 19 2016, 13:29:36) [MSC v.1500 64 bit (AMD64)]</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Type &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">IPython 5.1.0 -- An enhanced Interactive Python.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">?         -&gt; Introduction and overview of IPython's features.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">%quickref -&gt; Quick reference.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">help      -&gt; Python's own help system.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">object?   -&gt; Details about 'object', use 'object??' for extra details.</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">1</span><span style=" color:#000080;">]:</span> runfile('E:/Online Learning/Python/mnist_digits_batch.py', wdir='E:/Online Learning/Python')</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#4682b4;">  File </span><span style=" color:#006400;">&quot;E:/Online Learning/Python/mnist_digits_batch.py&quot;</span><span style=" color:#4682b4;">, line </span><span style=" color:#006400;">130</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#8b0000;">    20000              0.95        0.95      0.95       0.91</span></p>
+<br/>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">^</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#8b0000;">SyntaxError:</span> EOF while scanning triple-quoted string literal</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">2</span><span style=" color:#000080;">]:</span> runfile('E:/Online Learning/Python/mnist_digits_batch.py', wdir='E:/Online Learning/Python')</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">             precision    recall  f1-score   support</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          0       0.91      0.97      0.94      4132</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          1       0.92      0.97      0.94      4684</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          2       0.90      0.85      0.88      4177</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          3       0.84      0.85      0.84      4351</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          4       0.85      0.92      0.89      4072</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          5       0.82      0.80      0.81      3795</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          6       0.95      0.93      0.94      4137</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          7       0.91      0.88      0.90      4401</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          8       0.85      0.82      0.84      4063</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          9       0.87      0.82      0.84      4188</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">avg / total       0.88      0.88      0.88     42000</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">3</span><span style=" color:#000080;">]:</span> runfile('E:/Online Learning/Python/mnist_digits_batch.py', wdir='E:/Online Learning/Python')</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">             precision    recall  f1-score   support</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          0       0.91      0.97      0.94      4132</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          1       0.92      0.97      0.94      4684</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          2       0.90      0.85      0.88      4177</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          3       0.84      0.85      0.84      4351</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          4       0.85      0.92      0.89      4072</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          5       0.82      0.80      0.81      3795</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          6       0.95      0.93      0.94      4137</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          7       0.91      0.88      0.90      4401</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          8       0.85      0.82      0.84      4063</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          9       0.87      0.82      0.84      4188</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">avg / total       0.88      0.88      0.88     42000</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Traceback <span style=" color:#4682b4;">(most recent call last)</span>:</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  File <span style=" color:#006400;">&quot;&lt;ipython-input-3-de90348b9631&gt;&quot;</span>, line <span style=" color:#006400;">1</span>, in <span style=" color:#9400d3;">&lt;module&gt;</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">    runfile('E:/Online Learning/Python/mnist_digits_batch.py', wdir='E:/Online Learning/Python')</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  File <span style=" color:#006400;">&quot;E:\AnacondaPy27\lib\site-packages\spyder\utils\site\sitecustomize.py&quot;</span>, line <span style=" color:#006400;">866</span>, in <span style=" color:#9400d3;">runfile</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">    execfile(filename, namespace)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  File <span style=" color:#006400;">&quot;E:\AnacondaPy27\lib\site-packages\spyder\utils\site\sitecustomize.py&quot;</span>, line <span style=" color:#006400;">87</span>, in <span style=" color:#9400d3;">execfile</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">    exec(compile(scripttext, filename, 'exec'), glob, loc)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#4682b4;">  File </span><span style=" color:#006400;">&quot;E:/Online Learning/Python/mnist_digits_batch.py&quot;</span><span style=" color:#4682b4;">, line </span><span style=" color:#006400;">86</span><span style=" color:#4682b4;">, in </span><span style=" color:#9400d3;">&lt;module&gt;</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#8b0000;">    sub = f.add_subplot(1, 10, index + 1 + (10 * i))</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#8b0000;">NameError:</span> name 'f' is not defined</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">4</span><span style=" color:#000080;">]:</span> runfile('E:/Online Learning/Python/mnist_digits_batch.py', wdir='E:/Online Learning/Python')</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">             precision    recall  f1-score   support</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          0       0.91      0.97      0.94      4132</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          1       0.92      0.97      0.94      4684</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          2       0.90      0.85      0.88      4177</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          3       0.84      0.85      0.84      4351</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          4       0.85      0.92      0.89      4072</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          5       0.82      0.80      0.81      3795</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          6       0.95      0.93      0.94      4137</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          7       0.91      0.88      0.90      4401</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          8       0.85      0.82      0.84      4063</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          9       0.87      0.82      0.84      4188</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">avg / total       0.88      0.88      0.88     42000</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAnMAAAG7CAYAAACo4xNKAAAACXBIWXMAAAsS
+AAALEgHS3X78AAAgAElEQVR4nO3deXhVhZ3/8U9IUIZQICgUCZUmkJDlZoEC
+AZQlaEBF2YyCK6KOTtWqqCi/+kjVKSMOPtap1ad90FHGWhBwgVIrtCyi4BRQ
+QBFEZRFBiiGEVbN/f3/kl/NLJAko4SZf8n79Re7NXb455x7eOTn3nggzMwEA
+AMClZg39BAAAAPDDEXMAAACOEXMAAACOEXMAAACOEXMAAACOEXMAAACOHTfm
++vfvH47n8b38/ve/V1pamjIzM3X++edr06ZNwXUzZ85UQkKCEhISNHPmzODy
+m266SRkZGUpPT1dubq6OHDkiSZo/f77S09OVmZmpXr166d133w1mPnDggHJz
+c5WUlKTk5GS999574R20iieffFIpKSlKT0/XBRdcoC+++CK47oEHHlAoFFIo
+FNIrr7wSXL5kyRL17Nkz+Dl9/vnnkuqe+a233lL37t3VrVs3TZs2LbxDfkdd
+M1900UVq27atLr300hpve+edd6pVq1bB18uXL1ebNm2UmZmpzMxMPfroo+6W
+8/3336/U1FQlJyfrzjvvVOWnCt1www2Ki4sLZlu/fr0k6eDBg7rsssuUkZGh
+1NRUvfDCC8F93XjjjWrevLlCoVB4BzyOnTt3Kjs7Wz169FB6errefPPNatcN
+HTpUycnJSklJ0Y4dOyRJ11xzjbp3765QKKQbb7xRJSUl1e5zzZo1ioqKUvfu
+3cM5ygmpa1tW2+t6wIABwbLu1KmTRo0aJUn65JNP1K9fPzVr1kxPPPFE2Gep
+S13rdWRkZDDPiBEjgstr234VFBRo9OjRSk9PV58+fbRx40ZJUmFhofr06aPo
+6GilpqbqV7/6VXiHrMPEiRODGRMTE9W2bVtJ0vr169WvXz+lpqYqPT292nLe
+vn27srKy1K1bN40dO1bFxcWSpOnTpyszM1PR0dEKhUKKjIzU/v37G2Su76pt
+OS9btiyYPzMzUy1atNAbb7whSVq6dKl69uypUCik8ePHq7S0VFLt26/GvJy/
++OILXXDBBUpPT9fgwYO1a9eu4LraXs+1tUld2+8amUMHDx4M/j1//nwbNmyY
+mZnl5+dbXFyc5efn2/79+y0uLs72799/zG0mTpxojz32mJmZHT582MrLy83M
+bMOGDda9e/fg+66//nqbMWOGmZkVFRVZQUHBqR2sDkuXLrWjR4+amdmzzz5r
+V155pZmZLVy40C688EIrKSmxI0eOWK9evYJZExISbNOmTWZm9swzz9j48ePN
+rPaZS0tLLT4+3rZu3WpFRUWWnp5uH3/8cTjHrKa2mc3M/v73v9uCBQts+PDh
+x9xuzZo1du2111p0dHRw2bJly2r8XjMfy3nlypXWv39/Ky0ttdLSUuvbt68t
+W7bMzMzGjx9vc+fOPea+pk6davfff7+ZmX399dcWExNjRUVFZmb29ttv2/vv
+v2+pqalhmOrE/eu//qs9++yzZmb28ccfW5cuXYLrBg0aZIsXLzazinW48uf0
+l7/8xcrLy628vNzGjRsX3N6sYp3Ozs62iy++uMafUUOrbVtW1+u6qjFjxtjM
+mTPNzGzv3r22evVq++Uvf2nTp08PzwAnqK7XctXXaVW1bb/uu+8+e/jhh83M
+bPPmzTZkyBAzMysvL7fDhw+bmVlxcbH16dPH3nvvvVMyz8n47W9/axMmTDAz
+sy1bttinn35qZma7d++2jh07BtufK664wmbNmmVmZrfeemu19brSggULLDs7
+O0zP/PjqWs6V8vPzLSYmxo4ePWplZWXWuXNn27Jli5mZPfTQQ/bcc8+ZWe3b
+r8a8nHNzc+3FF180M7MlS5bYtddea2Z1v55ra5O6tt81Oe6eucq9G8uXL9eg
+QYM0cuRIxcfHa/LkyXr55ZfVp08fpaWlaevWrZKkP//5z8rKylKPHj104YUX
+au/evZKkvLw85eTkKDU1VTfffLO6dOmiffv2SZL++Mc/qk+fPsrMzNStt96q
+srKyOp9T69atg38fPXpUERERkqRFixYpJydH7dq1U0xMjHJycvTWW29Vu42Z
+6dtvvw1u06pVq+DflffVqlUrHTx4UIsWLdJLL72kkSNHKikpSdOmTWuwmbOz
+s9WyZUtJUt++fYPi37RpkwYOHKioqChFR0crPT09mDkiIkKHDh2SVFH5nTp1
+qnPm1atXq127dpowYYKuuOIKffnll/r5z3/e6GaWpAsuuEA/+tGPjrlNWVmZ
+Jk2apP/8z/+s874rfw5elnNERIQKCwtVXFysoqIilZSU6Mc//nGd9xUREaHD
+hw/LzHTkyBG1a9dOUVFRkqSBAwdqwIABkhrXa7u2dXbTpk0qLS1VTk5OsOwq
+f06XXHKJIiIiFBERoT59+lRbT55++mldfvnl6tChg6699tpGN29t27K6XteV
+Dh06pKVLlwZ75jp06KDevXtr+vTpjW7Oul7LtalrXRgyZIgkKSkpSTt27NDe
+vXuD7VirVq1UUlKi/fv367bbbmsU81c1a9YsXXXVVZKkxMREJSQkSJI6deqk
+Dh06KC8vT2ampUuXKjc3V5I0fvz4YE9WpVatWmnWrFnq2bOnq+U8b948XXzx
+xWrZsqXy8/N1xhlnKDExUZKUk5OjV199VVLt26/GvJyrrpvZ2dmaP39+cHlt
+r+fa2qSu7XeNjlealb81LVu2zNq0aWNfffWVFRYWWqdOnWzKlClmZvbUU0/Z
+XXfdZWZm+/fvD/b6zJgxw+655x4zM7v99tvtP/7jP8zM7K9//atJsry8PNu0
+aZNdeumlVlxcbGZmP//5z4PfNG+66SZbs2ZNjc/rd7/7ncXHx1vnzp2D32ym
+T59u//7v/x58z6OPPlrtN9QbbrjBOnToYIMHDw5+ezAze+2116x79+4WExNj
+q1atsujoaFu3bp11797dmjdvbqmpqXbDDTfYOeec06AzV7r99tuDORctWmT9
++/e3o0ePWl5ensXFxdkTTzxhZmYrVqywdu3aWWxsrCUnJ1f7DaCmmefOnWuX
+XHJJsJyff/55i46ObnQzV6ppb9tTTz1lTz75pJnZMXvmYmJiLC0tzS666CLb
+uHGjq+VsZnbvvfdamzZtrHXr1vbLX/4yuHz8+PHWrVs3S0tLs7vvvtsKCwvN
+zOzQoUM2ePBg69ixo0VHR9vChQur3X/Lli0tNTW1Ub22v/rqKwuFQhYbG2tt
+27a1tWvXmpnZ66+/bsOHD7fRo0dbZmam3XfffVZaWlrttsXFxdajRw9bsWKF
+mZnt2rXLBg4caGVlZTZ+/Hg788wzzczHtqyu13WlmTNn2uWXX37M/TVv3tym
+T5/e6Oas9N31OjIy0nr06GFZWVn2+uuvB5fXtv36P//n/9jdd99tZmb/+Mc/
+LDIyMlhPSktLrVmzZhYdHW3jxo1rdPPv2LHDOnbseMy6WzlLUlKSlZWVWV5e
+nnXt2jW4bufOncfsRY+OjraYmBibP39+o5uz8n6/u802M8vOzrY///nPZlax
+N/Xcc88N7uvOO++0UChkZnVvvxrrcr7qqqvsqaeeMjOzV1991STZvn37jvt6
+rqlNjrf9/q46Mu9YvXv31jnnnCNJ6tq1q4YOHSpJSktL07JlyyRJu3bt0tix
+Y7Vnzx4VFxcrLi5OkvTuu+/q9ddfl1RxvFNMTIykiuMi3n//ffXu3VuS9O23
+36pDhw6SpOeee67W53L77bfr9ttv15/+9Cf9+te/rnZ8XG1eeOEFlZWV6Re/
++IVeeeUVTZgwQZI0evRojR49WitWrNBDDz0kSSotLdVnn32mn/3sZ1q9erXu
+uusuRUVFNejMUsVvCmvXrtXbb78tSRo6dKjWrFmj/v37q3379urXr58iIyMl
+Sb/5zW/05ptvKisrS9OnT9c999wT3H9NM1eqXM7NmzdX69atG93Mtfnqq680
+d+5cLV++/JjrevbsqZ07d6pVq1Z68803g70ZXpbz559/rs2bNwe/6ebk5Oid
+d97RgAED9Nhjj6ljx44qLi7WLbfcoscff1xTpkzRokWLlJmZqaVLl2rr1q3K
+ycnRgAEDqu0NqtRYXtuzZs3SDTfcoHvvvVfvvfeerrvuOm3cuFGlpaV65513
+tG7dOp177rkaO3asXnzxRd10003BbW+77bZqexzvvvtuPf7442rW7Ng/QDSW
+eaWat2V1va6r/qxuvvnmWu+3sc0p1fxa/uKLLxQbG6tt27ZpyJAhSktLU9eu
+XWvdfk2ePFl33XWXMjMzlZaWph49egQ/m8jISP3Lv/yLdu3apcGDBys5OblR
+zT979mzl5uYesyz37Nmj6667TjNnzqxxfa1JaWmpsrOz1bp1axfLuXLOjz76
+SMOGDZNUsfdp9uzZmjhxooqKijR06NDgZ1PX9quxLucnnnhCd9xxh1588UUN
+HDhQsbGxioyMPO7ruaY2+T7bb+l7vpv1zDPP/P83bNYs+LpZs2bBQYu/+MUv
+dMcdd+ijjz7SH/7wBxUWFtZ5n2am8ePHa/369Vq/fr22bNmihx9++ISf07hx
+44Ldz7Gxsfryyy+D63bt2qXY2Nhq3x8ZGalx48YFu3KrGjhwoLZt2yYzU+fO
+ndW+fftg4eXm5uro0aMNOvPf//53TZ06VQsWLKi2LB588EGtX79ef/vb32Rm
+SkxMVF5enjZs2KCsrCxJ0tixY7Vq1ao6Z46NjdXXX38d3PeuXbvUokWLRjlz
+TdatW6fPP/9c3bp1009/+lN988036tatm6SKXdmVhwxccsklKikpcbWcX3/9
+dfXt2zf488LFF18cvFHjnHPOUUREhM4880xNmDBBq1evllSxgRgzZowiIiLU
+rVs3xcXF6ZNPPqnxMRvLa/v555/XlVdeKUnq16+fCgsLtW/fPnXu3FmZmZmK
+j49XVFSURo0apQ8++CC43SOPPKK8vDw9+eSTwWVr167VuHHj9NOf/lTz5s1T
+UVFRsK1oLPNWVXVbJtX8uq60b98+rV69WsOHD6/zPhvTnLW9liu30fHx8Ro8
+eLDWrVtX5/ardevWeuGFF7R+/Xr9z//8j/Ly8hQfH1/tsdq2basePXro4MGD
+jWZ+qSLmKv/EWunQoUMaPny4pk6dqr59+0qSzjrrLB04cCB4jjX9X1ZaWhrc
+l4flLElz5szR6NGj1bx58+Cyfv366Z133tHq1as1cODAYD0/ke1XY1vOnTp1
+0muvvaZ169Zp6tSpwXOU6n49S8e2yffZfkun4KNJDh48GKx0VfeWnXfeeZoz
+Z44kafHixSooKJBUcezTvHnz9PXXX0uS9u/fX+2dTjX57LPPgn//5S9/CY45
+GDZsWHDfBQUFWrx4sYYNGyYzC94JZWZasGCBkpKSJFXs8bD/967ADz74QEVF
+RYqIiFDHjh3Vvn374J0lS5YsCY4FaIiZ161bp1tvvVULFiwIwkOqOEYsPz9f
+kvThhx/qww8/1NChQxUTE6ODBw/q008/lST97W9/U3Jycp0z9+7dW7t27dI3
+33yj4uJizZ49W2eddVajm7k2w4cP1z//+U/t2LFDO3bsUMuWLYPl/s9//jOY
+efXq1SovL3e1nM8991y9/fbbKi0tVUlJid5+++1gee7Zs0dSxbr9xhtvBO9Q
+Pffcc7VkyRJJ0t69e7Vly5Zj/tP7PsIxf9XnvHnzZhUWFqp9+/bq3bu3Dhw4
+oLy8PEkV74BLSUmRVPFb8qJFizRr1qxqezW2b98erAu5ubk688wzgz2yjWXe
+2rZltb2uK82bN0+XXnqpWrRoccLz1KYh1+uCggIVFRVJqgjUlStXKiUlpc7t
+14EDB4J3dj733HMaOHCgWrdurby8PB04cEBSxV6UtWvXKjo6ulHML1W827ig
+oED9+vULLisuLtbo0aN1/fXXB8fHSRV7rLKzszVv3rzgeY0cObLacy4rK6t2
+WWOY83jb7KrHC1aqvP+ioiI9/vjj+rd/+zdJtW+/GvNy3rdvn8rLyyVJjz32
+mG688UZJtb+e62qT7739rvOPsFb9mLmqxycNGjQo+Jtx1eveeOMNi4uLs549
+e9p9991ngwYNMrOKd1oNGTLEUlNT7eabb7aOHTsGx/bMnj3bMjIyLC0tzXr2
+7Bm8M6W2v0vfeeedlpKSYhkZGTZ48GDbuHFjcN3zzz9vXbt2ta5du9p///d/
+m5lZWVmZ9e/f30KhkKWmptrVV18dHH8xbdq04L769u1r77zzTjDzjBkzrE2b
+NpaWlmYjR4608847r8FmvuCCC6xDhw6WkZFhGRkZdtlll5mZ2bfffmvJycmW
+nJxsWVlZtm7duuA2r732moVCIUtPT7dBgwbZ1q1bjzvzY489Zi1btrT4+Hj7
+9a9/3aDLubaZzczOP/98O/vss61FixYWGxtrb7311jG3r3rM3NNPP20pKSmW
+np5uWVlZtnLlSlfLubS01G655RZLSkqy5ORkmzhxYnCb7OzsYN2+5pprgnd6
+7d6923JycoLrXnrppeA248aNs4iICIuKirKzzz7b0tPTg+sacpl//PHH1r9/
+f0tPT7eMjAxbtGhRcN3ixYstLS3NQqGQjR8/PnhnV2RkpMXHxwc/s0ceeeSY
++/3uMXONfVtW1+u68jn/9a9/rXbZnj17LDY21iRZmzZt7Oyzzw7eHdvQc9a2
+Xq9cuTLYRoVCoeCdjGa1b79WrVplCQkJlpiYaKNHjw4+sWDDhg2WmZlpzZo1
+C45/bSzL2czsV7/6lT3wwAPVLnvppZcsKioq+LlkZGQEy3rr1q3Wu3dv69q1
+q+Xm5gaPbWb2wgsvWFRU1DGzNPScdW2zt2/fbp06dbKysrJqt7nvvvssKSnJ
+EhMT7Te/+U1weW3br8a8nOfOnWvdunWzhIQEu+mmm4L7qe31XFeb1LX9rknY
+PpqksLDQSkpKzKzixZiRkRGuh24wzMzMTUFTm7+pzNtU5qxNU5m/qcxZm9Nl
+/u/1BoiTsXPnTl155ZUqLy/XGWecoRkzZoTroRsMMzNzU9DU5m8q8zaVOWvT
+VOZvKnPW5nSZP8Ls/x1IBAAAAHc4NysAAIBjjTrmKj9K4quvvqr2Tp+aPPXU
+U/rmm29O+L5fffVVRUREaO3atSf1HOvbqZi5tvMCNhanYuaioiKNHTtW3bp1
+U1ZWVnAez8bgVK3Xc+bMUUpKilJTU3X11Vef9POsT6di5hUrVqhnz56KiooK
+3vXXmDS19VpqejM3tXklZm60M4f7IL2aPvm6NrWds68mXbp0sby8vBP63kOH
+DtmAAQMsKyvruJ9iXR8aw8yVqp4X8FRq6JmfeeYZu/XWW83MbNasWTWeI7A+
+NfS8n376qWVmZgbv7Nu7d+8JP8YP1dAzb9++3TZs2GDXXXdd2M672tAzh3u9
+Nmt6Mze1ec2Y+Xg8zFxvMbd9+3br3r27XX311ZaUlGSXX355cFqKLl262P33
+3289evSwWbNm2eeff27Dhg2znj172vnnn2+bN282M7Nt27ZZ3759LRQK2YMP
+Phj8ALdv3x6cyqS0tNTuvfdeS01NtbS0NPvtb39r//Vf/2XNmze3UChkgwcP
+Pu5zveuuu2zhwoXV3sJ8us9cqV+/fsHJyk/nmYcOHWqrVq0yM7OSkhI766yz
+glO5nI7zTpo0yWbMmPG95/M8c6Xx48efdMx5mbm+1uumOHNTm5eZm87MZvUc
+c5Ls3XffNTOzCRMmBOdF7dKliz3++OPB9w4ZMiQ4B+H//u//WnZ2tpmZXXbZ
+ZcG5z373u9/V+AN89tln7fLLLw/eSpyfnx88RtUaru1zYN5//30bM2aMmVm9
+xJyHmSvVdV7A023m1NRU+/LLL4Ov4+Pjv/deTE/zjhw50iZNmmT9+/e3rKys
+Yz6D7HScuVJ9xZyHmetrvW6KMze1eZm56cxsVs8x95Of/CT4esmSJTZy5Egz
+qxhux44dZmZ2+PBha9GiRbUPSUxKSjIzs3bt2gUntT148GCNP8AxY8bUuGfp
+RHZtlpWV2aBBg2z79u1mVj8x19hnrmratGl2xx13/IBJ/z8vM9fnfwAe5h0+
+fLiNGjXKiouLbdu2bda5c2crKCj43vN6mrlSfcWch5nr+z+9pjRzU5u38nkx
+8+k/s1k9f85cRERErV9Xnm6jvLxcbdu21fr160/oPurT4cOHtXHjRg0ePFhS
+xSmeRowYoQULFqhXr14/6D4b+8xVzZ49W88888xJ34+HmSvP09u5c2eVlpbq
+4MGDtZ6a7Hg8zNu5c2dlZWWpefPmiouLU2Jioj777LPgJNHfl4eZ65uHmetz
+vZaa3sxNbV6Jmb/79ek6c72+m3Xnzp3Byb//9Kc/6fzzzz/me1q3bq24uDjN
+nTtXUsX5yDZs2CCp4hxps2fPliS9/PLLNT5GTk6O/vCHPwQnz92/f78k6Uc/
++pEOHz5c5/Nr06aN9u3bF5yvsW/fvicVclLjn7lSTecF/KE8zDxixIjg/Hvz
+5s3TkCFDfvCL08O8o0aN0vLlyyVVnB/w008/PanzsHqYub55mLk+12up6c3c
+1OaVmLmpzFzvb4C45pprLCkpycaMGVPtoMOquw+3bdtmw4YNs/T0dEtOTg7O
+pXgiBx2WlJTYxIkTLTk52dLT0+3pp582s4p3aSYmJgYHHR7vOBuz+vkzq5eZ
+azov4Ok887fffmu5ubnWtWtX6927d3Bex9N13vLy8uD2oVDIZs2a9YPm9TTz
+6tWrLTY21lq2bGnt2rWzlJSU037m+lqvm+LMTW1eZm46M5uZ1dsZIHbs2KFL
+L71UGzdurI+7c4GZT39NbV6JmZuKpjZzU5tXYuampFF/aDAAAADqxrlZAQAA
+HAvLnrkDBw7o2WefDcdDSZIeeOABhUIhhUIhvfLKK2F73KrCOfOyZcuC03Vl
+ZmaqRYsWeuONN8Ly2FWFezlHRkYGM48YMSJsj1tVOGdev369+vXrp9TUVKWn
+pzfIut3U5pXCv17PnDlTCQkJSkhICA6QDjdmPvWYOfwzn9bzntQRdyeo6kGD
+31X5gXv1ZeHChXbhhRdaSUmJHTlyxHr16mUHDx6s18c4EeGcuar8/HyLiYkJ
+DvgMp3DP/H1OsXKqhHPmLVu2BB9wuXv3buvYseMP/iy5H6qpzWsW3pnz8/Mt
+Li7O8vPzbf/+/RYXFxecoi2cmLk6Zj55jWHm03nesOyZmzx5srZu3arMzExN
+mjRJy5cv14ABAzRixAilpKRox44dCoVCwfc/8cQTevjhhyVJW7du1UUXXaSf
+/exnGjBggD755JM6H2vTpk0aOHCgoqKiFB0drfT0dL311luncrwahXPmqubN
+m6eLL75YLVu2rO+RjquhZm5I4Zw5MTFRCQkJkqROnTqpQ4cOysvLO2Wz1aSp
+zSuFd+ZFixYpJydH7dq1U0xMjHJyck777RczM3O4nM7z1uuHBtdm2rRp2rhx
+Y/DhfMuXL9cHH3ygjRs3Ki4uTjt27Kj1trfccot+//vfKyEhQf/4xz902223
+aenSpVqwYIHWrl2rRx99tNr3Z2Rk6JFHHtG9996rb775RsuWLVNKSsqpHK9G
+4Zy5qtmzZ+uee+6p73FOSLhnLiwsVM+ePXXGGWdo8uTJGjVq1KkarVYNtZxX
+r16t4uJide3atb5HqlNTm1cK78y7d+/WT37yk+Drzp07a/fu3adkrrowMzOf
+jjOfzvOGJeZq0qdPH8XFxdX5PUeOHNGqVat0xRVXBJcVFRVJqvjAvZqOkxo6
+dKjWrFmj/v37q3379urXr58iIyPr98n/QKdq5kp79uzRRx99pGHDhtXPE64H
+p3LmL774QrGxsdq2bZuGDBmitLS0BvnP/rvCsZyvu+46zZw5U82aNfwb0pva
+vNKpn7kxYuaaMXMFrzOfLvM2WMxVnlJDkqKiolReXh58XVhYKOn4p9uozYMP
+PqgHH3xQknT11VcrMTGxHp7xyTuVM0vSnDlzNHr0aDVv3vzkn2w9OZUzx8bG
+SpLi4+M1ePBgrVu3rlHE3Kmc+dChQxo+fLimTp2qvn371s8TPklNbV7p1M0c
+GxsbnMlDknbt2hWcfrChMTMzn44zny7zhuXX3OOd3uLHP/6xvv76a+Xn56uo
+qEgLFy6UVPfpNmpTVlam/Px8SdKHH36oDz/8UEOHDq2nSU5cOGeuNGvWLF11
+1VUn/+R/oHDOXFBQEPxmtG/fPq1cubJB/pwezpmLi4s1evRoXX/99crNza2/
+Ib6HpjavFN6Zhw0bpsWLF6ugoEAFBQVavHhxg+xpZ+ZjMbP/mU/necMSc2ed
+dZbOO+88hUIhTZo06ZjrmzdvrilTpqhPnz7KyclRUlJScN3LL7+s559/XhkZ
+GUpNTdX8+fMlSQsWLNCUKVOOua+SkhINGDBAKSkpuuWWW/THP/5RUVHh3wEZ
+zpmlik+9/vLLLzVo0KBTM9AJCOfMmzdvVq9evZSRkaHs7GxNnjy5QWIunDPP
+mTNHK1as0Isvvhh8JMsP2YN7MpravFJ4Z27Xrp0eeugh9e7dW71799aUKVPU
+rl27UzdcLZiZmaXTb+bTeV4+NBgAAMCxxnE0MQAAAH4QYg4AAMAxYg4AAMAx
+Yg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4A
+AMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAx
+Yg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4A
+AMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAx
+Yg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4A
+AMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAx
+Yg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4A
+AMAxYg4AAMAxYg4AAMAxYg4AAIok9wkAAAgeSURBVMAxYg4AAMAxYg4AAMAx
+Yg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4A
+AMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAx
+Yg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4A
+AMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAx
+Yg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4A
+AMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAx
+Yg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4A
+AMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAx
+Yg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4A
+AMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAx
+Yg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4A
+AMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAx
+Yg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4A
+AMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAx
+Yg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4A
+AMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAx
+Yg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4A
+AMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAx
+Yg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4A
+AMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAx
+Yg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4A
+AMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAx
+Yg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4A
+AMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAx
+Yg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4A
+AMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAx
+Yg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4A
+AMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAx
+Yg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4A
+AMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAx
+Yg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4A
+AMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAx
+Yg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4A
+AMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAx
+Yg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4A
+AMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAx
+Yg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4A
+AMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAx
+Yg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4A
+AMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAx
+Yg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4A
+AMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAx
+Yg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4A
+AMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAx
+Yg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4A
+AMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMAxYg4AAMCx/ws8ICAsReVROAAA
+AABJRU5ErkJggg==
+" /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">5</span><span style=" color:#000080;">]:</span> runfile('E:/Online Learning/Python/mnist_digits_svm_old.py', wdir='E:/Online Learning/Python')</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Traceback <span style=" color:#4682b4;">(most recent call last)</span>:</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  File <span style=" color:#006400;">&quot;&lt;ipython-input-5-07a0743be7ff&gt;&quot;</span>, line <span style=" color:#006400;">1</span>, in <span style=" color:#9400d3;">&lt;module&gt;</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">    runfile('E:/Online Learning/Python/mnist_digits_svm_old.py', wdir='E:/Online Learning/Python')</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  File <span style=" color:#006400;">&quot;E:\AnacondaPy27\lib\site-packages\spyder\utils\site\sitecustomize.py&quot;</span>, line <span style=" color:#006400;">866</span>, in <span style=" color:#9400d3;">runfile</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">    execfile(filename, namespace)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  File <span style=" color:#006400;">&quot;E:\AnacondaPy27\lib\site-packages\spyder\utils\site\sitecustomize.py&quot;</span>, line <span style=" color:#006400;">87</span>, in <span style=" color:#9400d3;">execfile</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">    exec(compile(scripttext, filename, 'exec'), glob, loc)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#4682b4;">  File </span><span style=" color:#006400;">&quot;E:/Online Learning/Python/mnist_digits_svm_old.py&quot;</span><span style=" color:#4682b4;">, line </span><span style=" color:#006400;">16</span><span style=" color:#4682b4;">, in </span><span style=" color:#9400d3;">&lt;module&gt;</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#8b0000;">    from os import os</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#8b0000;">ImportError:</span> cannot import name os</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">6</span><span style=" color:#000080;">]:</span> runfile('E:/Online Learning/Python/mnist_digits_svm_old.py', wdir='E:/Online Learning/Python')</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Traceback <span style=" color:#4682b4;">(most recent call last)</span>:</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  File <span style=" color:#006400;">&quot;&lt;ipython-input-6-07a0743be7ff&gt;&quot;</span>, line <span style=" color:#006400;">1</span>, in <span style=" color:#9400d3;">&lt;module&gt;</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">    runfile('E:/Online Learning/Python/mnist_digits_svm_old.py', wdir='E:/Online Learning/Python')</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  File <span style=" color:#006400;">&quot;E:\AnacondaPy27\lib\site-packages\spyder\utils\site\sitecustomize.py&quot;</span>, line <span style=" color:#006400;">866</span>, in <span style=" color:#9400d3;">runfile</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">    execfile(filename, namespace)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  File <span style=" color:#006400;">&quot;E:\AnacondaPy27\lib\site-packages\spyder\utils\site\sitecustomize.py&quot;</span>, line <span style=" color:#006400;">87</span>, in <span style=" color:#9400d3;">execfile</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">    exec(compile(scripttext, filename, 'exec'), glob, loc)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#4682b4;">  File </span><span style=" color:#006400;">&quot;E:/Online Learning/Python/mnist_digits_svm_old.py&quot;</span><span style=" color:#4682b4;">, line </span><span style=" color:#006400;">40</span><span style=" color:#4682b4;">, in </span><span style=" color:#9400d3;">&lt;module&gt;</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#8b0000;">    rng = np.random.RandomState(0)</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#8b0000;">KeyboardInterrupt</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">7</span><span style=" color:#000080;">]:</span> runfile('E:/Online Learning/Python/mnist_digits_svm_old.py', wdir='E:/Online Learning/Python')</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">             precision    recall  f1-score   support</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          0       0.86      0.97      0.91      4132</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          1       0.90      0.97      0.93      4684</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          2       0.90      0.80      0.85      4177</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          3       0.84      0.82      0.83      4351</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          4       0.81      0.92      0.86      4072</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          5       0.79      0.83      0.81      3795</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          6       0.93      0.93      0.93      4137</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          7       0.89      0.88      0.89      4401</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          8       0.86      0.77      0.81      4063</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          9       0.87      0.77      0.81      4188</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">avg / total       0.87      0.87      0.86     42000</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;matplotlib.figure.Figure at 0xb08b7f0&gt;</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">8</span><span style=" color:#000080;">]:</span> runfile('E:/Online Learning/Python/mnist_digits_svm_old.py', wdir='E:/Online Learning/Python')</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">             precision    recall  f1-score   support</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          0       0.86      0.97      0.91      4132</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          1       0.90      0.97      0.93      4684</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          2       0.90      0.80      0.85      4177</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          3       0.84      0.82      0.83      4351</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          4       0.81      0.92      0.86      4072</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          5       0.79      0.83      0.81      3795</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          6       0.93      0.93      0.93      4137</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          7       0.89      0.88      0.89      4401</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          8       0.86      0.77      0.81      4063</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          9       0.87      0.77      0.81      4188</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">avg / total       0.87      0.87      0.86     42000</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">             precision    recall  f1-score   support</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          0       0.87      0.97      0.91      4132</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          1       0.90      0.97      0.93      4684</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          2       0.91      0.82      0.86      4177</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          3       0.82      0.83      0.82      4351</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          4       0.82      0.91      0.86      4072</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          5       0.80      0.82      0.81      3795</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          6       0.93      0.93      0.93      4137</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          7       0.89      0.88      0.89      4401</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          8       0.86      0.76      0.81      4063</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          9       0.87      0.76      0.81      4188</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">avg / total       0.87      0.87      0.86     42000</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">             precision    recall  f1-score   support</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          0       0.87      0.96      0.91      4132</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          1       0.91      0.97      0.94      4684</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          2       0.91      0.81      0.86      4177</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          3       0.80      0.83      0.81      4351</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          4       0.82      0.91      0.86      4072</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          5       0.78      0.82      0.80      3795</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          6       0.94      0.93      0.93      4137</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          7       0.88      0.88      0.88      4401</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          8       0.86      0.76      0.80      4063</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          9       0.87      0.75      0.81      4188</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">avg / total       0.86      0.86      0.86     42000</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">             precision    recall  f1-score   support</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          0       0.87      0.96      0.91      4132</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          1       0.91      0.97      0.94      4684</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          2       0.91      0.81      0.86      4177</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          3       0.81      0.83      0.82      4351</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          4       0.82      0.91      0.86      4072</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          5       0.78      0.81      0.79      3795</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          6       0.93      0.93      0.93      4137</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          7       0.89      0.87      0.88      4401</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          8       0.84      0.76      0.80      4063</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          9       0.87      0.77      0.81      4188</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">avg / total       0.86      0.86      0.86     42000</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">             precision    recall  f1-score   support</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          0       0.87      0.96      0.91      4132</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          1       0.91      0.96      0.94      4684</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          2       0.91      0.81      0.86      4177</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          3       0.81      0.82      0.82      4351</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          4       0.81      0.92      0.86      4072</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          5       0.78      0.82      0.80      3795</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          6       0.93      0.93      0.93      4137</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          7       0.89      0.87      0.88      4401</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          8       0.85      0.77      0.80      4063</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          9       0.87      0.75      0.81      4188</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">avg / total       0.86      0.86      0.86     42000</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;matplotlib.figure.Figure at 0xb08b908&gt;</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">9</span><span style=" color:#000080;">]:</span> runfile('E:/Online Learning/Python/mnist_digits_svm_old.py', wdir='E:/Online Learning/Python')</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">             precision    recall  f1-score   support</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          0       0.86      0.97      0.91      4132</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          1       0.90      0.97      0.93      4684</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          2       0.90      0.80      0.85      4177</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          3       0.84      0.82      0.83      4351</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          4       0.81      0.92      0.86      4072</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          5       0.79      0.83      0.81      3795</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          6       0.93      0.93      0.93      4137</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          7       0.89      0.88      0.89      4401</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          8       0.86      0.77      0.81      4063</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          9       0.87      0.77      0.81      4188</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">avg / total       0.87      0.87      0.86     42000</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">             precision    recall  f1-score   support</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          0       0.88      0.97      0.92      4132</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          1       0.92      0.96      0.94      4684</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          2       0.87      0.86      0.87      4177</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          3       0.80      0.83      0.82      4351</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          4       0.85      0.90      0.88      4072</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          5       0.82      0.78      0.80      3795</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          6       0.93      0.91      0.92      4137</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          7       0.92      0.85      0.88      4401</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          8       0.84      0.78      0.81      4063</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          9       0.84      0.82      0.83      4188</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">avg / total       0.87      0.87      0.87     42000</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">             precision    recall  f1-score   support</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          0       0.90      0.96      0.93      4132</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          1       0.91      0.97      0.94      4684</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          2       0.89      0.86      0.88      4177</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          3       0.82      0.84      0.83      4351</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          4       0.86      0.91      0.89      4072</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          5       0.82      0.80      0.81      3795</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          6       0.93      0.92      0.93      4137</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          7       0.92      0.86      0.89      4401</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          8       0.87      0.81      0.84      4063</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          9       0.84      0.84      0.84      4188</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">avg / total       0.88      0.88      0.88     42000</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">             precision    recall  f1-score   support</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          0       0.89      0.95      0.92      4132</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          1       0.93      0.97      0.95      4684</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          2       0.88      0.86      0.87      4177</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          3       0.82      0.85      0.84      4351</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          4       0.86      0.90      0.88      4072</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          5       0.81      0.76      0.78      3795</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          6       0.93      0.92      0.93      4137</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          7       0.92      0.89      0.91      4401</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          8       0.86      0.79      0.83      4063</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          9       0.84      0.83      0.84      4188</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">avg / total       0.88      0.88      0.88     42000</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">             precision    recall  f1-score   support</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          0       0.89      0.95      0.92      4132</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          1       0.93      0.96      0.95      4684</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          2       0.89      0.85      0.87      4177</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          3       0.85      0.84      0.84      4351</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          4       0.88      0.90      0.89      4072</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          5       0.80      0.76      0.78      3795</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          6       0.93      0.92      0.93      4137</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          7       0.92      0.90      0.91      4401</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          8       0.83      0.83      0.83      4063</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          9       0.84      0.83      0.83      4188</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">avg / total       0.88      0.88      0.88     42000</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;matplotlib.figure.Figure at 0x2e6bf588&gt;</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">10</span><span style=" color:#000080;">]:</span> runfile('E:/Online Learning/Python/mnist_digits_svm_old.py', wdir='E:/Online Learning/Python')</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">             precision    recall  f1-score   support</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          0       0.94      0.98      0.96      4132</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          1       0.94      0.98      0.96      4684</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          2       0.90      0.92      0.91      4177</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          3       0.88      0.89      0.89      4351</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          4       0.90      0.93      0.92      4072</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          5       0.90      0.87      0.89      3795</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          6       0.96      0.95      0.96      4137</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          7       0.93      0.93      0.93      4401</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          8       0.93      0.84      0.88      4063</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          9       0.90      0.88      0.89      4188</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">avg / total       0.92      0.92      0.92     42000</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">             precision    recall  f1-score   support</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          0       0.95      0.98      0.96      4132</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          1       0.95      0.98      0.96      4684</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          2       0.92      0.93      0.93      4177</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          3       0.88      0.91      0.90      4351</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          4       0.92      0.93      0.93      4072</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          5       0.91      0.88      0.89      3795</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          6       0.97      0.95      0.96      4137</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          7       0.93      0.93      0.93      4401</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          8       0.92      0.87      0.90      4063</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          9       0.89      0.88      0.88      4188</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">avg / total       0.93      0.93      0.92     42000</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">             precision    recall  f1-score   support</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          0       0.96      0.98      0.97      4132</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          1       0.96      0.98      0.97      4684</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          2       0.94      0.93      0.94      4177</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          3       0.91      0.91      0.91      4351</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          4       0.93      0.96      0.94      4072</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          5       0.92      0.90      0.91      3795</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          6       0.97      0.96      0.97      4137</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          7       0.94      0.93      0.93      4401</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          8       0.92      0.90      0.91      4063</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          9       0.90      0.89      0.90      4188</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">avg / total       0.94      0.94      0.94     42000</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">             precision    recall  f1-score   support</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          0       0.97      0.98      0.98      4132</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          1       0.97      0.98      0.98      4684</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          2       0.95      0.94      0.94      4177</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          3       0.93      0.93      0.93      4351</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          4       0.94      0.96      0.95      4072</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          5       0.93      0.92      0.93      3795</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          6       0.98      0.97      0.97      4137</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          7       0.94      0.95      0.94      4401</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          8       0.92      0.93      0.93      4063</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          9       0.92      0.90      0.91      4188</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">avg / total       0.95      0.95      0.95     42000</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">             precision    recall  f1-score   support</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          0       0.98      0.98      0.98      4132</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          1       0.98      0.98      0.98      4684</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          2       0.96      0.94      0.95      4177</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          3       0.93      0.93      0.93      4351</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          4       0.94      0.96      0.95      4072</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          5       0.93      0.93      0.93      3795</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          6       0.98      0.97      0.98      4137</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          7       0.95      0.95      0.95      4401</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          8       0.93      0.93      0.93      4063</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">          9       0.92      0.91      0.92      4188</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">avg / total       0.95      0.95      0.95     42000</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;matplotlib.figure.Figure at 0x2e6bf358&gt;</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">11</span><span style=" color:#000080;">]:</span> </p></body></html>

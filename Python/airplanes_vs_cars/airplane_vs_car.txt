@@ -1,0 +1,114 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Mar 16 22:14:46 2017
+
+@author: Akshay
+"""
+
+from skimage.measure import compare_ssim as compare_ssim
+import matplotlib.pyplot as plt
+import numpy as np
+import cv2
+import os
+import scipy.special as sp
+from numpy.linalg import inv
+from sklearn.metrics import classification_report
+
+pFiles = os.listdir("E:\Online Learning\Datasets\Cars_vs_Airplanes\Airplanes")
+nFiles = os.listdir("E:\Online Learning\Datasets\Cars_vs_Airplanes\Cars")
+
+print "reading files"
+X_file_names = []
+Y = []
+for i in range(len(pFiles)):
+    f=pFiles[i]
+    X_file_names.append("airplane_"+f)
+    Y.append(1)
+
+for i in range(len(nFiles)):
+    f=nFiles[i]
+    X_file_names.append("cars_"+f)
+    Y.append(-1)
+
+print "Randomly shuffle"
+Y = np.asarray(Y)
+X_file_names = np.asarray(X_file_names)
+index = np.arange(len(X_file_names))
+np.random.shuffle(index)
+Y = Y[index]
+X_file_names = X_file_names[index]  
+
+print "Reading Images"
+Images = []
+for index, image in enumerate(X_file_names):
+    #print index, image, Y[index]
+    if Y[index] == 1:
+        im = cv2.imread("E:\Online Learning\Datasets\Cars_vs_Airplanes\Airplanes\\" + image[9:])
+        im = cv2.resize(im, (100, 100))
+        # convert the images to grayscale
+        im = cv2.cvtColor(im, cv2.COLOR_BGR2GRAY)
+        Images.append((image, im.flatten())) 
+        
+    else:
+        im = cv2.imread("E:\Online Learning\Datasets\Cars_vs_Airplanes\Cars\\" + image[5:])
+        im = cv2.resize(im, (100, 100))
+        # convert the images to grayscale
+        im = cv2.cvtColor(im, cv2.COLOR_BGR2GRAY)
+        Images.append((image, im.flatten())) 
+    
+'''
+print "Computing the Weights using Structural Similarity"    
+#TODO: Choose scaling factor                       
+W = np.zeros((len(Images), len(Images)))
+for index, (image, im) in enumerate(Images):
+    for index1, (image1, im1) in enumerate(Images):
+        if image == image1:
+            W[index, index1] = 0.
+        else:
+            W[index, index1] = np.exp((1 - (compare_ssim(im, im1)))*10)
+'''
+
+print "Computing the Weights using Manhattan Distance"    
+#TODO: Choose scaling factor                       
+W = np.zeros((len(Images), len(Images)))
+for index, (image, im) in enumerate(Images):
+    for index1, (image1, im1) in enumerate(Images):
+        if image == image1:
+            W[index, index1] = 0.
+        else:
+            W[index, index1] = np.exp(-1. * np.sqrt(sum((im1 - im)**2)) / 10000.**2)
+
+
+print "Generating the Diagonal Matrix"
+D = np.zeros((len(X_file_names), len(X_file_names)))
+for i in range(len(X_file_names)):
+    D[i][i] = W[i].sum()
+
+print "Generating Graph Laplacian = D - W"
+Graph_Laplacian = D - W
+
+labelled_points = 100
+
+print "Generating Submatrices"
+l = np.arange(0, labelled_points)
+u = np.arange(labelled_points, len(W))
+
+W_ll = Graph_Laplacian[np.ix_(l, l)]
+W_lu = Graph_Laplacian[np.ix_(l, u)]
+W_ul = Graph_Laplacian[np.ix_(u, l)]
+W_uu = Graph_Laplacian[np.ix_(u, u)]
+f_l = Y[0:labelled_points]
+
+print "Inverting W_uu"
+W_uu_inv = inv(W_uu)
+
+print "Computing labels for unlabelled points"
+f_u = -1 * np.dot(np.dot(W_uu_inv, W_ul), f_l)
+
+pos_items = np.argwhere(abs(f_u) >= 0.5).flatten()
+neg_items = np.argwhere(abs(f_u) < 0.5).flatten()
+print len(pos_items), len(neg_items)
+f_u[np.ix_(pos_items)] = 1
+f_u[np.ix_(neg_items)] = -1
+
+print classification_report(Y[labelled_points:], f_u)

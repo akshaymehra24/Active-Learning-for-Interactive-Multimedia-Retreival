@@ -1,0 +1,34 @@
+40 categories
+4469 images
+batch: 2000 labelled images: 60%
+AL: 63%
+
+Linear Kernel:
+batch: 3000 labelled images: 69%
+AL: 3000 labelled images: 70%
+
+RBF Kernel
+batch vs AL:  C=1.0 40% vs 59%
+	      C=2.0 51% vs 64%
+
+Crammer_Singer
+batch: 58% vs 49%
+
+
+all categories
+9144 images
+batch: 6000 labelled images: 71
+AL: 74%
+
+
+--todo
+Linear Kernel:
+batch: 3000 labelled images: 69%
+AL: 3000 labelled images: 70%
+
+RBF Kernel
+batch vs AL:  C=1.0 40% vs 59%
+	      C=2.0 51% vs 64%
+
+Crammer_Singer
+batch: 58% vs 49%
